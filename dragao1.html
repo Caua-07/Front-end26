@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragãozinho 🔥🐉</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+        body {
+            background-color: #1e293b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #cardDragao {
+            width: 460px;
+            height: 680px;
+            border-radius: 3rem;
+            background-size: cover;
+            background-position: center;
+            box-shadow: 0 35px 60px -15px rgba(0,0,0,0.5);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .game-content {
+            height: 100%;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .animal-container {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .animal-container img {
+            max-height: 260px;
+            transition: 0.4s;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="cardDragao">
+    <div class="game-content">
+
+        <!-- HEADER -->
+        <div class="flex items-center gap-4 mb-6">
+            <img id="avatar" src="dragon_normal.png" class="w-16 rounded-full">
+
+            <input id="nomeCriatura"
+                   value="Drake"
+                   class="input w-full text-center font-bold">
+        </div>
+
+        <!-- DRAGÃO -->
+        <div class="animal-container">
+            <img id="bichinho" src="dragon_normal.png">
+        </div>
+
+        <!-- STATUS -->
+        <div class="space-y-4">
+            <div>
+                ❤️ Vida
+                <progress id="vidaBar" max="100" value="100" class="progress progress-error"></progress>
+            </div>
+
+            <div>
+                🍖 Energia
+                <progress id="fomeBar" max="100" value="100" class="progress progress-warning"></progress>
+            </div>
+
+            <div>
+                😄 Humor
+                <progress id="humorBar" max="100" value="100" class="progress progress-success"></progress>
+            </div>
+        </div>
+
+        <!-- BOTÃO -->
+        <button onclick="alimentar()" class="btn btn-primary mt-6">
+            Alimentar 🔥
+        </button>
+
+    </div>
+</div>
+
+<script src="bicho.js"></script>
+</body>
+</html>
