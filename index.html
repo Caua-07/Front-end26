@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Exercícios JavaScript</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Lista de Exercícios JavaScript</h1>
+        <p>Laboratório de Programação FrontEnd</p>
+    </header>
+
+
+    <!-- EXERCÍCIO 1 -->
+    <section class="card">
+
+        <h2>Exercício 1 - Validador de CPF</h2>
+
+        <input type="text" id="cpf" placeholder="Digite o CPF">
+
+        <button onclick="validarCPF()">
+            Validar CPF
+        </button>
+
+        <div id="resultadoCPF"></div>
+
+    </section>
+
+ <!-- EXERCÍCIO 2 -->
+       
+<section class="card">
+
+        <h2>Exercício 2 - Conversor de Temperatura</h2>
+
+        <input type="number" id="celsius" placeholder="Celsius" step="0.1">
+
+        <input type="number" id="fahrenheit" placeholder="Fahrenheit" step="0.1">
+
+    </section>
+
+
+    <!-- EXERCÍCIO 3 -->
+    <section class="card">
+
+        <h2>Exercício 3 - Média Escolar</h2>
+
+        <input type="text" id="nome" placeholder="Nome do aluno">
+
+        <input type="number" id="n1" placeholder="Nota 1">
+
+        <input type="number" id="n2" placeholder="Nota 2">
+
+        <input type="number" id="n3" placeholder="Nota 3">
+
+        <button onclick="calcularMedia()">
+            Calcular Média
+        </button>
+
+        <div id="resultadoMedia"></div>
+
+    </section>
+
+<!-- EXERCÍCIO 4 -->
+        <h2>Exercício 4 - Infinity Bank</h2>
+
+        <select id="bandeira">
+            <option value="visa">Visa</option>
+            <option value="master">Master</option>
+            <option value="elo">Elo</option>
+        </select>
+
+        <input type="number" id="valorVenda" placeholder="Valor da venda">
+
+        <input type="number" id="parcelas" placeholder="Quantidade de parcelas">
+
+        <button onclick="calcularTaxas()">
+            Calcular
+        </button>
+
+        <div id="resultadoTaxas"></div>
+
+    </section>
+
+
+    <!-- EXERCÍCIO 5 -->
+    <section class="card">
+
+        <h2>Exercício 5 - Lista VIP</h2>
+
+        <input type="text" id="convidado" placeholder="Nome do convidado">
+
+        <button onclick="adicionarConvidado()">
+            Adicionar
+        </button>
+
+        <ul id="listaConvidados"></ul>
+
+    </section>
+
+
+    <!-- EXERCÍCIO 6 -->
+    <section class="card">
+
+        <h2>Exercício 6 - Eventos</h2>
+
+        <select id="pacote">
+            <option value="50">Standard</option>
+            <option value="80">Premium</option>
+            <option value="120">Infinity Deluxe</option>
+        </select>
+
+        <input type="number" id="pessoas" placeholder="Quantidade de pessoas">
+
+        <button onclick="calcularEvento()">
+            Calcular Orçamento
+        </button>
+
+        <div id="resultadoEvento"></div>
+
+    </section>
+
+
+    <!-- EXERCÍCIO 7 -->
+    <section class="card">
+
+        <h2>Exercício 7 - Validador de Cartão</h2>
+
+        <input type="text" id="cartao" placeholder="Número do cartão">
+
+        <button onclick="validarCartao()">
+            Analisar Cartão
+        </button>
+
+        <div id="resultadoCartao"></div>
+
+    </section>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
