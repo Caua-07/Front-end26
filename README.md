@@ -20,3 +20,5 @@ BIMESTRE 2:
 ATIVIDADE 001 ->  prova1.zip   |   prova2.zip  |    prova3!.html
 
 ATIVIDADE 002 -> index.html  | style.css  |  script.js  | lista.html (lista de exercícios passada)
+
+ATIVIDADE 003 -> JOGO DA VELHA -> app.jsx  |  jogo.css  |  jogo.html
